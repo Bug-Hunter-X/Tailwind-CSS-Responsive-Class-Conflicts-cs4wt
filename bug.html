@@ -1,0 +1,9 @@
+This bug occurs when using Tailwind CSS with complex responsive designs.  I have a component with multiple responsive classes that conflict and the wrong styles are applied.  For example:
+
+```html
+<div class="md:flex lg:block sm:grid">
+  <!-- Content -->
+</div>
+```
+
+Depending on the screen size, different classes take precedence, sometimes resulting in unexpected layouts or styles.  The problem is not immediately obvious due to Tailwind's utility-first nature, making debugging challenging.
